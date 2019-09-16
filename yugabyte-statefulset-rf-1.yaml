@@ -112,7 +112,7 @@ spec:
           - "--rpc_bind_addresses=$(POD_IP):7100"
           - "--server_broadcast_addresses=$(POD_NAME).yb-masters:7100"
           - "--use_private_ip=never"
-          - "--master_addresses=yb-masters.default.svc.cluster.local:7100"
+          - "--master_addresses=yb-masters.yugabyte-demo.svc.cluster.local:7100"
           # To disable YugaByte SQL API functionality, comment the
           # "use_initial_sys_catalog_snapshot" flag below.
           # Flag support added after version 1.3.
@@ -244,7 +244,7 @@ spec:
           - "--start_pgsql_proxy"
           - "--pgsql_proxy_bind_address=$(POD_IP):5433"
           - "--use_private_ip=never"
-          - "--tserver_master_addrs=yb-masters.default.svc.cluster.local:7100"
+          - "--tserver_master_addrs=yb-masters.yugabyte-demo.svc.cluster.local:7100"
           - "--tserver_master_replication_factor=1"
           - "--logtostderr"
         ports:
