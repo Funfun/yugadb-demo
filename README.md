@@ -1,5 +1,7 @@
 # yugadb-demo
 
+this is modified original instructions of https://docs.yugabyte.com/latest/quick-start/create-local-cluster/
+
 ## usage
 
 ```
